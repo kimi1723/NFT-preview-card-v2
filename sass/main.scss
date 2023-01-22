@@ -200,12 +200,18 @@ main {
 // ATTRIBUTION
 .attribution {
 	position: absolute;
-	bottom: 1rem;
+	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	font-size: 11px;
+	width: 100%;
+	padding: 1rem;
+	font-size: 9px;
 	text-align: center;
 	color: color.$primary;
+
+	@media (min-width: 321px) {
+		font-size: 0.7rem;
+	}
 }
 
 .attribution a {
